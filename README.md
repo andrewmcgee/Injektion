@@ -6,6 +6,28 @@ A simple way to handle dependency injection using property wrappers. It is avail
 
 https://www.avanderlee.com/swift/dependency-injection/
 
+## Install
+
+### Swift Package
+
+Injektion can be added to an Xcode project as a swift package. Using the regular Xcode tool, search for the following URL:
+
+https://github.com/andrewmcgee/Injektion
+
+### Cocoapods
+
+Injektion can be added to a project as a pod by adding the folloing to your `Podfile` under the correct target:
+
+```
+pod 'Injektion', '~> 1.0.0'
+```
+
+and then running the following command in yout terminal:
+
+```
+pod install
+```
+
 ## Usage
 
 To set up a dependency, define a new (optionally private) key struct that conforms to the `DependencyKey` protocol. Its current value should be the dependency, which can be abstracted behind a protocol.
